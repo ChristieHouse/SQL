@@ -88,7 +88,7 @@ WHERE length(orderID)=6
 AND orderID <> "Order ID";
 
 # Which product brought in the most revenue in January and how much revenue did it bring in total?
-SELECT DISTINCT Product, SUM(Quantity*price) as Revenue
+SELECT Product, SUM(Quantity*price) as Revenue
 FROM BIT_DB.JanSales
 WHERE length(orderID)=6
 AND orderID <> "Order ID"
